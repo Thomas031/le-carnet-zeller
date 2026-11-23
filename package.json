@@ -1,0 +1,6 @@
+{
+  "name": "carnet-zeller-partage",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node server.mjs" }
+}

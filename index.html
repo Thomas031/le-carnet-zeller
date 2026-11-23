@@ -1,0 +1,382 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Le Carnet Zeller</title><style>
+:root{--ink:#192826;--muted:#56645e;--nav:#182432;--green:#254d3c;--line:#dddeda;--wine:#78374a;--paper:#f9f7ef}*{box-sizing:border-box}body{margin:0;background:#f7f7f2;color:var(--ink);font:16px system-ui,sans-serif;display:grid;grid-template-columns:236px minmax(0,1fr);min-height:100vh}button,input,select{font:inherit}button,select{cursor:pointer;border:1px solid var(--line);border-radius:9px;background:white;padding:.62rem .8rem;color:inherit}button:hover{filter:brightness(.95)}button:focus-visible,input:focus-visible,select:focus-visible,[contenteditable]:focus-visible{outline:2px solid #688a71;outline-offset:3px}input{min-width:0;border:1px solid var(--line);border-radius:8px;padding:.55rem .7rem}aside{background:var(--nav);color:#f5f4ef;padding:30px 20px;display:flex;flex-direction:column;gap:12px}.brand{display:flex;align-items:center;gap:12px;font-size:19px;line-height:1.05}.logo{display:grid;place-items:center;background:var(--wine);border:1px solid #a46777;border-radius:11px;width:45px;height:45px;font:bold 30px Georgia;color:#fff0de}.brand strong{font-family:Georgia;font-size:25px}small{color:#b5c2c3}.navlabel,.eyebrow{font-size:12px;font-weight:750;letter-spacing:.14em}.navlabel{color:#b5c2c3;margin:37px 0 0}nav{display:grid;gap:5px}nav button{border:0;background:transparent;text-align:left;color:#dce4e2}nav button[aria-current=true]{background:#344a48;color:white}.bottom{display:flex;align-items:center;gap:10px;margin-top:auto;border-top:1px solid #41505d;padding-top:16px}.avatar{border-radius:50%;background:#d5e0ce;color:#253d30;padding:8px 13px;font-weight:bold}header{height:68px;background:#fff;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:0 clamp(16px,4vw,52px);gap:12px;color:var(--muted)}header i{margin:0 8px;color:#818d85}.search{display:flex;align-items:center;gap:7px;background:#f5f6f2;border:1px solid var(--line);border-radius:9px;padding-left:10px}.search input{border:0;background:none;width:min(30vw,230px)}#dashboard{max-width:1360px;margin:auto;padding:32px clamp(16px,4vw,52px)}.hero{background:#dce7d5;border:1px solid #cedcc6;border-radius:19px;padding:clamp(22px,4vw,48px);display:grid;grid-template-columns:1fr .6fr;overflow:hidden;min-height:285px;align-items:center}.eyebrow{color:#375847;margin:0 0 12px}h1,h2{font-family:Georgia,serif;margin:0}h1{font-size:clamp(42px,6vw,72px);letter-spacing:-.06em;line-height:1}h2{font-size:29px}.hero p:not(.eyebrow),.heading p{color:var(--muted);line-height:1.55}.primary{background:var(--green);border-color:var(--green);color:white;font-weight:650}.art{display:grid;place-items:center;position:relative}.book{transform:rotate(-14deg);display:grid;place-items:center;width:138px;height:174px;background:var(--wine);color:#f7ead9;border-radius:4px 12px 12px 4px;box-shadow:9px 9px #f6ebd7,15px 16px 23px #23382b40;border-left:8px solid #5d2938;padding:14px;font-family:Georgia}.book b{font-size:57px;line-height:.9}.pencil{position:absolute;width:10px;height:130px;background:#314e42;border-radius:5px 5px 2px 2px;transform:translate(98px,14px) rotate(19deg);box-shadow:3px 5px 5px #283d3230}.listing{margin-top:34px}.heading,.editor-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.heading p{margin:5px 0 14px}#filters{display:flex;gap:9px;margin-bottom:16px;flex-wrap:wrap}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,205px),1fr));gap:12px}.card{text-align:left;padding:17px;min-height:127px;display:grid;align-content:start;gap:8px}.card strong{font-size:17px}.tag{width:max-content;max-width:100%;background:#edf2e9;color:#315440;padding:3px 8px;border-radius:6px;font-size:13px}.muted,.group,#status{color:var(--muted)}.group{font-weight:650;margin:20px 0 9px}.empty{border:1px dashed #b9c5b8;border-radius:12px;padding:24px}#editing{padding:20px clamp(12px,4vw,45px)}#tools{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0}.paper{max-width:794px;margin:auto;background:white;min-height:1050px;padding:clamp(18px,5vw,72px);border:1px solid var(--line);box-shadow:0 12px 30px #1724270c}.paper #title{font:700 clamp(26px,4vw,44px) Georgia;width:100%;border:0;padding:0}.meta{margin:14px 0;display:flex;gap:6px;flex-wrap:wrap}.meta input{width:145px}.meta select{max-width:100%}#content{line-height:1.65;min-height:380px;overflow-wrap:anywhere;margin:24px 0}#content img{max-width:100%}table{border-collapse:collapse;width:100%;table-layout:fixed}td,th{border:1px solid #aabbb0;padding:8px}blockquote{margin:12px 0;padding:10px 14px;border-left:4px solid #7c9a80;background:#edf3ea}.attachments{display:grid;gap:12px;border-top:1px solid var(--line);padding-top:12px}.attachments input{display:block;max-width:100%}dialog{border:1px solid var(--line);border-radius:14px}dialog form{display:grid;gap:14px}dialog input{display:block;margin-top:6px}dialog::backdrop{background:#18243266}@media(max-width:740px){body{display:block}aside{padding:12px 15px;gap:4px}aside .bottom,aside>small,.navlabel{display:none}nav{display:flex;flex-wrap:wrap;margin-top:8px}nav button{padding:.45rem .55rem;font-size:14px}header{height:58px}header>span{font-size:14px}.search input{width:37vw}.hero{min-height:240px;grid-template-columns:1fr auto}.book{width:74px;height:100px;padding:6px;font-size:10px}.book b{font-size:35px}.pencil,.desktop{display:none}}@page{size:A4;margin:15mm}@media print{body{display:block;background:white}aside,header,.editor-head,#tools,.attachments,.meta{display:none!important}#editing,.paper{padding:0;margin:0;border:0;box-shadow:none;min-height:0;max-width:none}}
+body.locked{display:grid;grid-template-columns:1fr;place-items:center;padding:20px;background:#dce7d5}body.locked aside,body.locked main{display:none}#login{width:min(100%,420px);background:#f9f7ef;border:1px solid #cedcc6;border-radius:18px;padding:clamp(20px,5vw,38px)}#login h1{font-size:clamp(30px,7vw,42px);margin-top:16px}#login p{color:var(--muted)}#login label{display:grid;gap:5px;margin:14px 0}#login .primary{width:100%}#loginError{color:var(--wine);margin-bottom:0}#logout{margin-left:auto;padding:5px;font-size:13px;background:transparent;color:white;border-color:#627074}@media(max-width:740px){aside .bottom{display:flex;padding-top:5px}.bottom .avatar,.bottom small{display:none}}
+
+</style>
+<body class="locked"><section id="login" aria-labelledby="loginTitle"><form id="loginForm"><span class="logo">Z</span><h1 id="loginTitle">Le Carnet Zeller</h1><p>Connecte-toi pour retrouver tes cours.</p><label>Identifiant<input id="username" autocomplete="username" required></label><label>Mot de passe<input id="password" type="password" autocomplete="current-password" required></label><button class="primary">Se connecter</button><p id="loginError" role="alert"></p></form></section><aside><div class="brand"><span class="logo">Z</span><div>Le Carnet<br><strong>Zeller</strong></div></div><small>CEFPPA Adrien Zeller</small><p class="navlabel">MON ESPACE</p><nav id="nav"></nav><div class="bottom"><span class="avatar">T</span><div><span id="accountName"></span><br><small>Bibliothèque partagée</small></div><button id="logout" title="Se déconnecter" aria-label="Se déconnecter">Quitter</button></div></aside>
+<main><header><span>Mon espace <i>/</i> <strong id="crumb">Mes cours</strong></span><label class="search">⌕ <input id="search" placeholder="Rechercher un cours…" aria-label="Rechercher un cours"></label></header><div id="dashboard"><section class="hero"><div><p class="eyebrow">CEFPPA ADRIEN ZELLER</p><h1>Mes cours</h1><p>Retrouve tes notes, organise tes chapitres<br class="desktop"> et prépare tes prochaines révisions.</p><button class="primary" id="new">＋ Nouveau cours</button></div><div class="art" aria-hidden="true"><div class="book"><span>Le Carnet</span><b>Z</b><span>ZELLER</span></div><div class="pencil"></div></div></section><section class="listing"><div class="heading"><div><h2 id="sectionTitle">Bibliothèque</h2><p id="count"></p><p id="syncStatus" role="status"></p></div><button id="folder">＋ Dossier</button></div><div id="filters"><select id="subject" aria-label="Filtrer par matière"></select><button id="remember">Enregistrer la vue</button></div><div id="cards"></div></section></div>
+<section id="editing" hidden><div class="editor-head"><button id="back">‹ Mes cours</button><span id="status" role="status"></span><button id="retry" hidden>Réessayer</button><button id="copy" hidden>Enregistrer une copie</button><button id="pdf">Imprimer / PDF</button></div><div id="tools" aria-label="Mise en forme"></div><article class="paper"><input id="title" aria-label="Titre du cours" placeholder="Titre du cours"><div class="meta"><input id="matter" placeholder="Matière" aria-label="Matière"><input id="chapter" placeholder="Chapitre" aria-label="Chapitre"><input id="date" type="date" aria-label="Date du cours"><select id="location" aria-label="Dossier"></select></div><div id="content" contenteditable="true" role="textbox" aria-label="Contenu du cours" aria-multiline="true"></div><div class="attachments"><label>Ajouter une pièce jointe <input id="attachment" type="file" accept=".pdf,.doc,.docx,image/*"></label><label>Convertir un Word (.docx) <input id="word" type="file" accept=".docx"></label><ul id="files"></ul></div></article></section></main>
+<dialog id="dialog"><form method="dialog"><h2>Nouveau dossier</h2><label>Nom du dossier<input id="folderName" required maxlength="80"></label><div><button value="cancel" formnovalidate>Annuler</button> <button class="primary" value="create">Créer</button></div></form></dialog><script>
+'use strict'
+const $ = id => document.getElementById(id)
+const make = (tag, text, cls) => Object.assign(document.createElement(tag), {textContent:text, className:cls || ''})
+const button = (text, action, cls) => Object.assign(make('button',text,cls),{onclick:action,type:'button'})
+const today = () => new Date().toLocaleDateString('sv-SE')
+const load = (key, fallback) => {try{return JSON.parse(localStorage.getItem(key)) ?? fallback}catch{return fallback}}
+let account = null
+let courses = []
+let folders = []
+const key = name => 'zeller.'+account+'.'+name
+const views = {'all':'Mes cours','subjects':'Matières et chapitres','weeks':'Semaines et jours','recent':'Cours récents','folders':'Mes dossiers'}
+let view = 'all'
+let filter = ''
+let active = null
+let dirty = false
+let conflict = false
+let saveTimer
+let saving
+let uploading = false
+let closing = false
+let refreshRunning = false
+const report = message => {$('status').textContent = message}
+async function api(path, method='GET', data) {
+  const options = {method}
+  if(data instanceof Blob)options.body = data
+  else if(data !== undefined) {
+    options.headers = {'Content-Type':'application/json'}
+    options.body = JSON.stringify(data)
+  }
+  const response = await fetch('/api/'+path, options)
+  const result = await response.json()
+  if(!response.ok)throw Object.assign(new Error(result.error),{status:response.status})
+  return result
+}
+async function refresh(){
+  if(active || refreshRunning)return
+  refreshRunning = true
+  try {
+    const data = await api('library')
+    if(active)return
+    courses = data.courses
+    folders = data.folders
+    $('syncStatus').textContent = ''
+    render()
+  } catch(error) {
+    $('syncStatus').textContent = error.status === 401 ? error.message : 'Connexion perdue. Nouvelle tentative automatique.'
+  } finally {
+    refreshRunning = false
+  }
+}
+$('loginForm').onsubmit = async event => {
+  event.preventDefault()
+  const submit = event.submitter
+  submit.disabled = true
+  $('loginError').textContent = ''
+  try {
+    await api('login','POST',{username:$('username').value.trim().toLowerCase(),password:$('password').value})
+    await start()
+  } catch(error) {
+    $('loginError').textContent = error.status ? error.message : 'Serveur indisponible.'
+  } finally {
+    $('password').value = ''
+    submit.disabled = false
+  }
+}
+$('logout').onclick = async () => {
+  if(!await closeEditor())return
+  try {
+    await api('logout','POST')
+    location.reload()
+  } catch(error) {
+    $('syncStatus').textContent = error.message
+  }
+}
+function save(){
+  clearTimeout(saveTimer)
+  if(saving)return saving
+  if(conflict)return Promise.resolve(false)
+  if(!dirty)return Promise.resolve(true)
+  const course = active
+  saving = (async()=>{
+    while(dirty) {
+      dirty = false
+      try {
+        Object.assign(course,await api('courses','PUT',course))
+        report('Enregistré en ligne')
+        $('retry').hidden = true
+      } catch(error) {
+        dirty = true
+        conflict = error.status === 409
+        $('retry').hidden = conflict
+        $('copy').hidden = !conflict
+        report(error.status ? error.message : 'Hors connexion. Tes modifications attendent un enregistrement.')
+        return false
+      }
+    }
+    return true
+  })().finally(()=>{saving = null})
+  return saving
+}
+$('retry').onclick = save
+$('copy').onclick = () => {
+  if(!active || !conflict)return
+  active.id = crypto.randomUUID()
+  active.rev = 0
+  active.title = (active.title || 'Sans titre').slice(0,285)+' (copie)'
+  $('title').value = active.title
+  conflict = false
+  $('copy').hidden = true
+  save()
+}
+function scheduleSave(){
+  dirty = true
+  if(conflict)return
+  report('Enregistrement en attente…')
+  clearTimeout(saveTimer)
+  saveTimer = setTimeout(save,650)
+}
+window.addEventListener('beforeunload',event=>{
+  if(dirty || saving || uploading){
+    event.preventDefault()
+    event.returnValue = true
+  }
+})
+window.addEventListener('online',()=>{if(active)save();else refresh()})
+function options(select,list,value){select.replaceChildren(...list.map(([key,label])=>new Option(label,key)));select.value=value; if(select.selectedIndex<0)select.selectedIndex=0}
+function week(date){
+  const day = new Date(date+'T12:00:00')
+  const monday = new Date(day)
+  monday.setDate(day.getDate() - (day.getDay()+6)%7)
+  return 'Semaine du '+monday.toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'})
+}
+function render(){
+  $('nav').replaceChildren(...Object.entries(views).map(([key,label])=>{
+    const item=button(label,async()=>{if(!await closeEditor())return;view=key;render();refresh()})
+    item.setAttribute('aria-current',String(key===view))
+    return item
+  }))
+  const matters = [...new Set(courses.map(c=>c.matter).filter(Boolean))].sort((a,b)=>a.localeCompare(b))
+  options($('subject'),[['','Toutes les matières'],...matters.map(m=>[m,m])],filter)
+  filter=$('subject').value
+  $('crumb').textContent=views[view]
+  $('sectionTitle').textContent=view==='all'?'Bibliothèque':views[view]
+  const query=$('search').value.trim().toLocaleLowerCase()
+  const matching=courses.filter(c=>(!filter||c.matter===filter)&&[c.title,c.chapter,c.matter,c.folder].join(' ').toLocaleLowerCase().includes(query))
+  matching.sort((a,b)=>view==='weeks'?b.date.localeCompare(a.date):b.updated-a.updated)
+  if(view==='recent')matching.splice(10)
+  $('count').textContent=matching.length+' cours'
+  const groups=new Map()
+  if(view==='folders'&&!query&&!filter)folders.forEach(f=>groups.set(f,[]))
+  for(const c of matching){
+    let group=''
+    if(view==='subjects')group=(c.matter||'Sans matière')+' · '+(c.chapter||'Sans chapitre')
+    if(view==='weeks')group=week(c.date)
+    if(view==='folders')group=c.folder||'Sans dossier'
+    if(!groups.has(group))groups.set(group,[])
+    groups.get(group).push(c)
+  }
+  const root=$('cards')
+  root.replaceChildren()
+  for(const [name,items] of groups){
+    if(name)root.append(make('div',name,'group'))
+    const grid=make('div','','grid')
+    for(const c of items){
+      const card=button('',()=>openEditor(c),'card')
+      const date=new Date(c.date+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'short'})
+      card.append(make('span',c.matter||'Sans matière','tag'),make('strong',c.title||'Sans titre'),make('small',(c.chapter?c.chapter+' · ':'')+date,'muted'))
+      grid.append(card)
+    }
+    if(!items.length)grid.append(make('p','Dossier vide','muted'))
+    root.append(grid)
+  }
+  if(!groups.size)root.append(make('p','Aucun cours dans cette vue.','empty'))
+}
+async function closeEditor(){
+  if(closing || uploading)return false
+  if(active) {
+    closing = true
+    const saved = await save()
+    closing = false
+    if(!saved)return false
+  }
+  active=null
+  $('editing').hidden=true
+  $('dashboard').hidden=false
+  return true
+}
+function openEditor(course){
+  active={...course,files:[...course.files]}
+  $('dashboard').hidden=true
+  $('editing').hidden=false
+  $('crumb').textContent='Éditeur'
+  for(const [id,key] of [['title','title'],['matter','matter'],['chapter','chapter'],['date','date']])$(id).value=course[key]
+  options($('location'),[['','Sans dossier'],...folders.map(f=>[f,f])],course.folder)
+  $('content').replaceChildren(cleanContent(course.html))
+  drawAttachments()
+  report('Bibliothèque partagée')
+  window.scrollTo(0,0)
+}
+function update(){
+  if(!active)return
+  Object.assign(active,{title:$('title').value,matter:$('matter').value.trim(),chapter:$('chapter').value.trim(),date:$('date').value||today(),folder:$('location').value,html:$('content').innerHTML,updated:Date.now()})
+  scheduleSave()
+}
+for(const id of ['title','matter','chapter','date','location','content'])$(id).addEventListener('input',update)
+$('new').onclick=()=>{
+  if(active || closing)return
+  const c={id:crypto.randomUUID(),rev:0,title:'',matter:filter,chapter:'',date:today(),folder:'',html:'',updated:Date.now(),files:[]}
+  openEditor(c);update();$('title').focus()
+}
+$('back').onclick=async()=>{if(await closeEditor())await refresh()}
+$('search').oninput=()=>{if(!active)render()}
+$('subject').onchange=e=>{filter=e.target.value;render()}
+$('remember').onclick=()=>{localStorage.setItem(key('view'),JSON.stringify({view,filter}));$('remember').textContent='Vue enregistrée'}
+$('folder').onclick=()=>{$('folderName').value='';$('dialog').showModal()}
+$('dialog').addEventListener('close',async()=>{
+  const name=$('folderName').value.trim()
+  if($('dialog').returnValue!=='create'||!name)return
+  try {
+    folders = (await api('folders','POST',{name})).folders
+    view='folders';render()
+    refresh()
+  } catch(error) {
+    $('syncStatus').textContent = error.message
+  }
+})
+$('pdf').onclick=()=>window.print()
+function command(name,arg){$('content').focus();document.execCommand(name,false,arg);update()}
+for(const [label,name,arg] of [
+  ['Annuler','undo'],['Rétablir','redo'],['Titre','formatBlock','h2'],['Texte','formatBlock','p'],
+  ['Gras','bold'],['Italique','italic'],['Souligner','underline'],['Liste','insertUnorderedList'],
+  ['Numéros','insertOrderedList'],
+  ['Tableau','insertHTML','<table><tbody><tr><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td></tr></tbody></table><p><br></p>']
+]){
+  const key=button(label,()=>command(name,arg))
+  key.onmousedown=e=>e.preventDefault()
+  $('tools').append(key)
+}
+const color=Object.assign(document.createElement('input'),{type:'color',value:'#78374a',title:'Couleur du texte'})
+color.setAttribute('aria-label','Couleur du texte')
+let selection
+$('content').addEventListener('focusout',()=>{
+  const s=getSelection()
+  selection=s.rangeCount&&$('content').contains(s.anchorNode)?s.getRangeAt(0).cloneRange():null
+})
+function restore(){if(selection&&$('content').contains(selection.startContainer)){$('content').focus();getSelection().removeAllRanges();getSelection().addRange(selection)}}
+color.onchange=()=>{restore();command('foreColor',color.value)}
+const image=Object.assign(document.createElement('input'),{type:'file',accept:'image/png,image/jpeg,image/webp,image/gif',hidden:true})
+$('tools').append(color,button('Image',()=>image.click()),image)
+image.onchange=()=>{
+  const file=image.files[0], course=active
+  image.value=''
+  if(!file)return
+  if(file.size>1000000){report('Choisis une image de moins de 1 Mo ou ajoute-la en pièce jointe.');return}
+  const reader=new FileReader()
+  reader.onload=()=>{if(active===course){restore();command('insertImage',reader.result)}}
+  reader.readAsDataURL(file)
+}
+$('content').addEventListener('paste',e=>{e.preventDefault();command('insertText',e.clipboardData.getData('text/plain'))})
+$('content').addEventListener('drop',e=>e.preventDefault())
+function cleanContent(html){
+  const template = document.createElement('template')
+  template.innerHTML = html
+  const allowed = new Set('DIV P BR B STRONG I EM U H1 H2 H3 H4 H5 H6 UL OL LI TABLE TBODY THEAD TR TH TD SPAN FONT IMG BLOCKQUOTE'.split(' '))
+  for(const element of template.content.querySelectorAll('*')){
+    if(!allowed.has(element.tagName)){
+      element.remove()
+      continue
+    }
+    const src = element.getAttribute('src') || ''
+    const color = element.getAttribute('color') || element.style.color
+    for(const attr of [...element.attributes])element.removeAttribute(attr.name)
+    if(color)element.style.color = color
+    if(element.tagName === 'IMG' && /^data:image\/(png|jpeg|webp|gif);base64,/i.test(src))element.src = src
+  }
+  return template.content
+}
+function drawAttachments(){
+  $('files').replaceChildren(...active.files.map(file=>{
+    const item = make('li','')
+    const link = make('a',file.name)
+    link.href = '/api/files/'+encodeURIComponent(file.id)
+    link.download = file.name
+    item.append(link)
+    return item
+  }))
+}
+$('attachment').onchange = async () => {
+  const input = $('attachment')
+  const file = input.files[0]
+  input.value = ''
+  if(!file || !active || uploading || closing)return
+  if(file.size > 20*1024*1024){
+    report('Cette pièce jointe dépasse 20 Mo.')
+    return
+  }
+  uploading = true
+  input.disabled = true
+  report('Envoi de la pièce jointe…')
+  try {
+    const {id} = await api('files','POST',file)
+    active.files.push({id,name:file.name.slice(0,255)})
+    drawAttachments()
+    scheduleSave()
+  } catch(error) {
+    report(error.message)
+  } finally {
+    uploading = false
+    input.disabled = false
+  }
+}
+async function wordXML(file){
+  if(file.size>20000000)throw Error()
+  const bytes=new Uint8Array(await file.arrayBuffer()), data=new DataView(bytes.buffer)
+  const u16=i=>data.getUint16(i,true),u32=i=>data.getUint32(i,true)
+  let end=bytes.length-22
+  while(end>=Math.max(0,bytes.length-65557)&&u32(end)!==0x06054b50)end--
+  if(end<0||u32(end)!==0x06054b50)throw Error()
+  let pos=u32(end+16)
+  for(let i=0;i<u16(end+10);i++){
+    if(u32(pos)!==0x02014b50)throw Error()
+    const name=new TextDecoder().decode(bytes.subarray(pos+46,pos+46+u16(pos+28)))
+    if(name==='word/document.xml'){
+      const local=u32(pos+42),start=local+30+u16(local+26)+u16(local+28)
+      const raw=bytes.slice(start,start+u32(pos+20)),method=u16(pos+10)
+      if(method===0)return new TextDecoder().decode(raw)
+      if(method!==8||u32(pos+24)>8000000)throw Error()
+      const stream=new Blob([raw]).stream().pipeThrough(new DecompressionStream('deflate-raw'))
+      return await new Response(stream).text()
+    }
+    pos+=46+u16(pos+28)+u16(pos+30)+u16(pos+32)
+  }
+  throw Error()
+}
+$('word').onchange=async()=>{
+  const input=$('word'),file=input.files[0],course=active
+  input.value=''
+  if(!file||!course)return
+  try{
+    const xml=new DOMParser().parseFromString(await wordXML(file),'text/xml')
+    const ns='http://schemas.openxmlformats.org/wordprocessingml/2006/main'
+    const paragraphs=[...xml.getElementsByTagNameNS(ns,'p')]
+    if(xml.querySelector('parsererror')||!paragraphs.length)throw Error()
+    if(active!==course)return
+    for(const p of paragraphs){
+      const style=p.getElementsByTagNameNS(ns,'pStyle')[0]?.getAttributeNS(ns,'val')||''
+      const text=[...p.getElementsByTagNameNS(ns,'t')].map(node=>node.textContent).join('')
+      $('content').append(make(/^(Heading|Titre)[1-6]/i.test(style)?'h2':'p',text))
+    }
+    update()
+  }catch{report('Conversion impossible. Vérifie que le fichier est un .docx valide.')}
+}
+async function start(){
+  const data = await api('library')
+  account = data.username
+  const prefs = load(key('view'),{})
+  view = Object.hasOwn(views,prefs.view) ? prefs.view : 'all'
+  filter = prefs.filter || ''
+  courses = data.courses
+  folders = data.folders
+  document.body.classList.remove('locked')
+  $('login').hidden = true
+  $('accountName').textContent = account === 'thomas' ? 'Thomas' : 'Ami'
+  document.querySelector('.avatar').textContent = $('accountName').textContent[0]
+  render()
+  setInterval(refresh,5000)
+  window.addEventListener('focus',refresh)
+}
+start().catch(error=>{
+  if(error.status !== 401)$('loginError').textContent = 'Serveur indisponible.'
+})
+
+</script></body></html>

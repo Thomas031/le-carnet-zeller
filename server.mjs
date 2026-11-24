@@ -3,7 +3,7 @@ import { createHash, randomUUID, timingSafeEqual } from 'node:crypto'
 import { mkdirSync, readFileSync, writeFileSync, renameSync, existsSync, createReadStream } from 'node:fs'
 import { resolve, join } from 'node:path'
 
-const passwords = { thomas: process.env.ZELLER_THOMAS_PASSWORD, ami: process.env.ZELLER_AMI_PASSWORD }
+const passwords = { thomas: process.env.cefppa, sacha: process.env.cefppa }
 if (Object.values(passwords).some(password => !password || password.length < 12)) {
   throw new Error('Définis ZELLER_THOMAS_PASSWORD et ZELLER_AMI_PASSWORD (12 caractères minimum).')
 }
